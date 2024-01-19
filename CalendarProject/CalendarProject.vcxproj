@@ -72,8 +72,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\krise\OneDrive\Desktop\PCLIBS2015;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\krise\OneDrive\Desktop\PCLIBS2015;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\krise\source\repos\CalendarProject\PCLIBS2015;C:\Users\krise\OneDrive\Desktop\PCLIBS2015;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\krise\source\repos\CalendarProject\PCLIBS2015;C:\Users\krise\OneDrive\Desktop\PCLIBS2015;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -90,7 +90,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\krise\OneDrive\Desktop\PCLIBS2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\krise\source\repos\CalendarProject\PCLIBS2015;C:\Users\krise\OneDrive\Desktop\PCLIBS2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -142,10 +142,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Library Include="..\..\..\..\OneDrive\Desktop\PCLIBS2015\PCLibs2015.lib" />
+    <ClCompile Include="calendar.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="calendar.c" />
+    <Library Include="..\PCLIBS2015\PCLibs2015.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

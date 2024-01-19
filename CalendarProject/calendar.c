@@ -3,7 +3,7 @@
 * ----------------------------------
 * this program is used to generate a calendar for a year
 * entered by the user
-* /
+*/
 
 #include <stdio.h>
 #include "simpio.h"
